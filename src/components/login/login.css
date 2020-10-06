@@ -1,0 +1,30 @@
+.login-main-div{
+    text-align: center;
+}
+.login-page-logo{
+    margin-top: 4vh;
+    width: 25vw;
+}
+.login-form{
+    width: 40vw;
+    height: 60vh;
+    border: 1px solid gray;
+    border-radius: 3vh;
+    font-size: 3vh;
+    margin-top: 2vw;
+    margin-left: 30vw;
+}
+.google-login{
+    width: 35vw;
+    height: 7vh;
+    border: 1px solid gray;
+    border-radius: 4vh;
+    padding-top: 5px;
+    display: flex;
+}
+.google-logo{
+    width: 5vh;
+    height: 5vh;
+    margin-left: 1vw;
+    margin-right: 6vw;
+}

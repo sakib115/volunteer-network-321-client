@@ -1,0 +1,29 @@
+.registration-main-div{
+    text-align: center;
+}
+.login-page-logo{
+    margin-top: 4vh;
+    width: 25vw;
+}
+.registration-form{
+    width: 40vw;
+    height: 80vh;
+    border: 1px solid gray;
+    border-radius: 3vh;
+    font-size: 3vh;
+    margin-top: 2vw;
+    margin-left: 30vw;
+}
+.registration-inputs{
+    width: 35vw;
+    height: 11vh;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.registration-inputs:focus{
+    outline: none;
+}
+.register-btn{
+    width: 30vw;
+    height: 7vh;
+}
