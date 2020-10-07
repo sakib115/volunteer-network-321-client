@@ -14,9 +14,7 @@ const nav = ({name}) => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                     <Link to='/' className="nav-link active"><a>Home <span className="sr-only">(current)</span></a></Link>
-                    <a className="nav-link" href="#">Donation</a>
                     <Link to='/event' className="nav-link" href="#">Events</Link>
-                    <a className="nav-link" href="#">Blog</a>
                         {name
                             ?
                             <h1>{name}</h1>

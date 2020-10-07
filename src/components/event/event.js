@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 //react import
 import React, { useState, useEffect } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 //css import
 import './event.css'
 //mui
@@ -23,7 +24,6 @@ import Paper from '@material-ui/core/Paper';
     fontSize: 14,
   },
 }))(TableCell);
-
 const StyledTableRow = withStyles((theme) => ({
   root: {
     '&:nth-of-type(odd)': {
@@ -31,31 +31,34 @@ const StyledTableRow = withStyles((theme) => ({
     },
   },
 }))(TableRow);
-
-function createData(name, calories, fat) {
-  return { name, calories, fat };
-}
-
-
 const useStyles = makeStyles({
   table: {
     minWidth: 700,
   },
 });
 
+
+const event = ({pname}) => {
+
+
+
+
+const classes = useStyles();
+
+  
+  
+  
+  
+    let history = useHistory();
+    let location = useLocation();
+    let { from } = { from: { pathname: `/event` }}
 function handleCancel(id){
             fetch(`https://protected-castle-08953.herokuapp.com/delete/${id}`, {method: 'DELETE'})
             .then( res => res.json)
             .then(result => {
-                console.log(result)
+             history.replace(from)
             })
-    console.log(id)
         }
-
-const event = ({pname}) => {
-
-const classes = useStyles();
-
 
     const [currentData, setCurrentData] = useState([]);
     useEffect(
